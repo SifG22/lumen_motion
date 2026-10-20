@@ -1,0 +1,40 @@
+[package]
+name = "lumen-motion-engine"
+description = "The Lumen Motion engine: session, undo history, editor state and the command registry every frontend (UI, CLI, control channel, MCP) dispatches through"
+version.workspace = true
+edition.workspace = true
+license.workspace = true
+rust-version.workspace = true
+
+[lints]
+workspace = true
+
+[dependencies]
+craft-docpath = { workspace = true }
+lumen-motion-time = { workspace = true }
+lumen-motion-geom = { workspace = true }
+lumen-motion-color = { workspace = true }
+lumen-motion-keyframe = { workspace = true }
+lumen-motion-project = { workspace = true }
+lumen-motion-raster = { workspace = true }
+lumen-motion-path = { workspace = true }
+lumen-motion-text = { workspace = true }
+lumen-motion-effects = { workspace = true }
+lumen-motion-render = { workspace = true }
+lumen-motion-segment = { workspace = true }
+lumen-motion-track = { workspace = true }
+lumen-motion-model = { workspace = true }
+lumen-motion-lottie = { workspace = true }
+lumen-motion-interchange = { workspace = true }
+lumen-motion-psd = { workspace = true }
+kurbo = { workspace = true }
+lumen-motion-svg = { workspace = true }
+lumen-motion-pdf = { workspace = true }
+serde = { workspace = true }
+serde_json = { workspace = true }
+thiserror = { workspace = true }
+log = { workspace = true }
+rayon = { workspace = true }
+image = { workspace = true }
+web-time = { workspace = true }
+exr = { workspace = true }

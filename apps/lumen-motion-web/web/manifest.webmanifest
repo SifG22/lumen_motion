@@ -1,0 +1,27 @@
+{
+  "name": "Lumen Motion",
+  "short_name": "Lumen Motion",
+  "description": "Gráficos en movimiento, animación y efectos visuales, en el navegador. Por SifG22.",
+  "lang": "es",
+  "id": "./",
+  "start_url": "./",
+  "scope": "./",
+  "display": "standalone",
+  "background_color": "#1b1c1f",
+  "theme_color": "#0e9aa8",
+  "categories": ["graphics", "photo", "productivity"],
+  "icons": [
+    { "src": "favicon.svg", "sizes": "any", "type": "image/svg+xml" },
+    { "src": "icon-256.png", "sizes": "256x256", "type": "image/png" },
+    { "src": "icon-512.png", "sizes": "512x512", "type": "image/png" }
+  ],
+  "file_handlers": [
+    {
+      "action": "./",
+      "accept": {
+        "application/x-lumeneffects": [".lumeneffects", ".lumeneffectsx"],
+        "application/x-lumeneffects-legacy": [".ecproj", ".ecprojx"]
+      }
+    }
+  ]
+}

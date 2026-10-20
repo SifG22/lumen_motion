@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" role="img" aria-label="Lumen Motion project">
+  <defs>
+    <linearGradient id="tile" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#34d9c3"/>
+      <stop offset="1" stop-color="#0e9aa8"/>
+    </linearGradient>
+    <mask id="keyframe" maskUnits="userSpaceOnUse" x="0" y="0" width="512" height="512">
+      <rect width="512" height="512" fill="#fff"/>
+      <polygon points="292,292 314,314 292,336 270,314"/>
+    </mask>
+  </defs>
+  <path d="M120 16 H318 L424 122 V464 A32 32 0 0 1 392 496 H120 A32 32 0 0 1 88 464 V48 A32 32 0 0 1 120 16 Z" fill="#f5f8f9" stroke="#0e9aa8" stroke-width="12" stroke-linejoin="round"/>
+  <path d="M318 16 V98 A24 24 0 0 0 342 122 H424 Z" fill="#cfe9ec" stroke="#0e9aa8" stroke-width="12" stroke-linejoin="round"/>
+  <rect x="136" y="198" width="240" height="240" rx="52" fill="url(#tile)"/>
+  <g fill="#ffffff">
+    <rect x="172" y="278" width="48" height="18" rx="9"/>
+    <rect x="152" y="305" width="68" height="18" rx="9"/>
+    <rect x="172" y="332" width="48" height="18" rx="9"/>
+    <circle cx="292" cy="314" r="52" mask="url(#keyframe)"/>
+  </g>
+</svg>

@@ -1,0 +1,8 @@
+asset:        lumen-motion-tiny.svg
+title:        Lumen Motion app icon, plain variant for 16-24 px
+author:       SifG22
+source:       original work (drawn as SVG for Lumen Motion)
+license:      MIT OR Apache-2.0
+license-file: assets/app-icon/LICENSE.txt
+added:        2026-10-20 by Claude (agent) for SifG22
+notes:        One streak and the ball, no cut-out. 512 viewBox, rounded tile rx=112, vertical fade #34d9c3 to #0e9aa8, flat white glyph. See assets/app-icon/README.md.

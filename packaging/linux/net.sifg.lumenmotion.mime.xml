@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mime-info xmlns="http://www.freedesktop.org/standards/shared-mime-info">
+  <mime-type type="application/x-lumeneffects">
+    <comment>Lumen Motion project</comment>
+    <comment xml:lang="es">Proyecto de Lumen Motion</comment>
+    <sub-class-of type="application/json"/>
+    <icon name="net.sifg.lumenmotion"/>
+    <glob pattern="*.lumeneffects"/>
+    <glob pattern="*.lumeneffectsx"/>
+    <glob pattern="*.ecproj"/>
+    <glob pattern="*.ecprojx"/>
+  </mime-type>
+  <mime-type type="application/x-lumeneffects-template">
+    <comment>Lumen Motion template</comment>
+    <comment xml:lang="es">Plantilla de Lumen Motion</comment>
+    <sub-class-of type="application/zip"/>
+    <icon name="net.sifg.lumenmotion"/>
+    <glob pattern="*.lumeneffectstemplate"/>
+    <glob pattern="*.ectemplate"/>
+  </mime-type>
+  <mime-type type="application/x-lumeneffects-preset">
+    <comment>Lumen Motion preset</comment>
+    <comment xml:lang="es">Ajuste preestablecido de Lumen Motion</comment>
+    <sub-class-of type="application/json"/>
+    <icon name="net.sifg.lumenmotion"/>
+    <glob pattern="*.lumeneffectspreset"/>
+    <glob pattern="*.ecpreset"/>
+  </mime-type>
+</mime-info>

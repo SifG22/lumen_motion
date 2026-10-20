@@ -1,0 +1,8 @@
+asset:        lumen-motion.svg
+title:        Lumen Motion app icon, master vector (white ball with motion streaks and a keyframe diamond on a Lumen Motion teal tile)
+author:       SifG22
+source:       original work (drawn as SVG for Lumen Motion)
+license:      MIT OR Apache-2.0
+license-file: assets/app-icon/LICENSE.txt
+added:        2026-10-20 by Claude (agent) for SifG22
+notes:        Master for 48 px and up. 512 viewBox, rounded tile rx=112, vertical fade #34d9c3 to #0e9aa8, flat white glyph. See assets/app-icon/README.md.

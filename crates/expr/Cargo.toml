@@ -1,0 +1,29 @@
+[package]
+name = "lumen-motion-expr"
+description = "After Effects-compatible expressions: a boa JavaScript runtime with the AE object model (thisComp, thisLayer, wiggle, loopOut, valueAtTime…) and array maths"
+version.workspace = true
+edition.workspace = true
+license.workspace = true
+rust-version.workspace = true
+
+[lints]
+workspace = true
+
+[dependencies]
+lumen-motion-time = { workspace = true }
+lumen-motion-geom = { workspace = true }
+lumen-motion-keyframe = { workspace = true }
+serde_json = { workspace = true }
+lumen-motion-project = { workspace = true }
+lumen-motion-path = { workspace = true }
+lumen-motion-render = { workspace = true }
+boa_engine = { workspace = true }
+
+# On the web, boa's clock and Math.random need the browser (getrandom `wasm_js`, web-time).
+[target.'cfg(target_arch = "wasm32")'.dependencies]
+boa_engine = { workspace = true, features = ["js"] }
+
+[dev-dependencies]
+lumen-motion-color = { workspace = true }
+lumen-motion-effects = { workspace = true }
+lumen-motion-text = { workspace = true }

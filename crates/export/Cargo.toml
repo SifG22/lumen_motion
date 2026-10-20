@@ -1,0 +1,38 @@
+[package]
+name = "lumen-motion-export"
+description = "Render Queue jobs and output modules: H.264 MP4 (+AAC), ProRes and uncompressed MOV (+PCM) via FilmCraft, HEVC / AV1 MP4 (+AAC) and WebM (VP9 or AV1 + Opus) via Lumen Motion encoders, PNG/JPEG/TIFF/EXR sequences, animated GIF, WAV/AIFF"
+version.workspace = true
+edition.workspace = true
+license.workspace = true
+rust-version.workspace = true
+
+[lints]
+workspace = true
+
+[dependencies]
+lumen-motion-time = { workspace = true }
+lumen-motion-project = { workspace = true }
+lumen-motion-raster = { workspace = true }
+lumen-motion-render = { workspace = true }
+filmcraft-h264enc = { workspace = true }
+filmcraft-prores = { workspace = true }
+filmcraft-aac = { workspace = true }
+filmcraft-isobmff = { workspace = true }
+lumen-motion-opusenc = { workspace = true }
+lumen-motion-vp9enc = { workspace = true }
+lumen-motion-hevcenc = { workspace = true }
+lumen-motion-av1enc = { workspace = true }
+image = { workspace = true, features = ["png", "jpeg", "tiff", "exr"] }
+gif = { workspace = true }
+rayon = { workspace = true }
+web-time = { workspace = true }
+thiserror = { workspace = true }
+log = { workspace = true }
+
+[dev-dependencies]
+lumen-motion-media = { workspace = true }
+lumen-motion-effects = { workspace = true }
+lumen-motion-color = { workspace = true }
+filmcraft-opus = { workspace = true }
+filmcraft-vp9 = { workspace = true }
+lumen-motion-keyframe = { workspace = true }

@@ -1,0 +1,12 @@
+{
+  "mcpServers": {
+    "lumen-motion": {
+      "command": "cargo",
+      "args": ["run", "--quiet", "--release", "-p", "lumen-motion-cli", "--", "mcp", "--demo"]
+    },
+    "lumen-motion-app": {
+      "command": "cargo",
+      "args": ["run", "--quiet", "--release", "-p", "lumen-motion-cli", "--", "mcp", "--bridge", "9877"]
+    }
+  }
+}

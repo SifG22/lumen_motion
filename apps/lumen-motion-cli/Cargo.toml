@@ -1,0 +1,25 @@
+[package]
+name = "lumen-motion-cli"
+description = "Lumen Motion headless CLI: render frames and sequences, run commands, MCP server"
+version.workspace = true
+edition.workspace = true
+license.workspace = true
+
+[lints]
+workspace = true
+
+[[bin]]
+name = "lumen-motion-cli"
+path = "src/main.rs"
+
+[dependencies]
+lumen-motion-engine = { workspace = true }
+lumen-motion-host = { workspace = true }
+lumen-motion-automation = { workspace = true }
+lumen-motion-ui-egui = { workspace = true }
+lumen-motion-render = { workspace = true }
+lumen-motion-gpu = { workspace = true }
+lumen-motion-time = { workspace = true }
+serde_json = { workspace = true }
+image = { workspace = true }
+cpu-time = "1"

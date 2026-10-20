@@ -1,0 +1,8 @@
+asset:        lumen-motion-macos-512.png
+title:        Lumen Motion runtime Dock icon (macOS)
+author:       SifG22
+source:       original work (drawn as SVG for Lumen Motion)
+license:      MIT OR Apache-2.0
+license-file: assets/app-icon/LICENSE.txt
+added:        2026-10-20 by Claude (agent) for SifG22
+notes:        Rendered from lumen-motion.svg on Apple's icon grid (412 of 512 px).

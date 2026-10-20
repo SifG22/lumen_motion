@@ -1,0 +1,7 @@
+asset:        Render Queue Batch.jsx
+title:        Lumen Motion sample script (Render Queue Batch)
+author:       upstream contributors (LICENSE-MIT)
+source:       original work
+license:      MIT OR Apache-2.0
+added:        2026-10-03 by upstream contributors (LICENSE-MIT) (M13.1)
+notes:        Written from scratch for Lumen Motion against the documented scripting behaviour; not derived from any Adobe sample.

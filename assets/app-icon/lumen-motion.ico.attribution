@@ -1,0 +1,8 @@
+asset:        lumen-motion.ico
+title:        Lumen Motion Windows app icon, 16-256 px
+author:       SifG22
+source:       original work (drawn as SVG for Lumen Motion)
+license:      MIT OR Apache-2.0
+license-file: assets/app-icon/LICENSE.txt
+added:        2026-10-20 by Claude (agent) for SifG22
+notes:        Tiny variant at 16-24 px, small at 32-40 px, master from 48 px. Embedded in LumenMotion.exe.

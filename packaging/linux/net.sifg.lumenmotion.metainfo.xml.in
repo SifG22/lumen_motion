@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- AppStream metadata (software centres, Flathub). Template: package.sh and the Flatpak
+     manifest substitute @VERSION@ and @DATE@ from Cargo.toml and the build date. -->
+<component type="desktop-application">
+  <id>net.sifg.lumenmotion</id>
+  <metadata_license>CC0-1.0</metadata_license>
+  <project_license>MIT OR Apache-2.0</project_license>
+  <name>Lumen Motion</name>
+  <summary>Motion graphics, animation and visual effects</summary>
+  <summary xml:lang="es">Gráficos en movimiento, animación y efectos visuales</summary>
+  <developer id="net.sifg">
+    <name>SifG22</name>
+  </developer>
+  <description>
+    <p>
+      Lumen Motion, by SifG22, is a motion graphics and visual effects app: layers with keyframes
+      and a graph editor, masks and shapes, text animators, expressions, 3D cameras and lights,
+      over 300 effects and a render queue, with GPU compositing. Its Lumen menu animates text,
+      adds titles, lower thirds and transitions, makes vertical and square copies for social media
+      and exports them in one click.
+    </p>
+    <p xml:lang="es">
+      Lumen Motion, de SifG22, es una aplicación de gráficos en movimiento y efectos visuales.
+      Su menú Lumen anima textos, añade títulos, rótulos y transiciones, crea copias verticales y
+      cuadradas para redes sociales y las exporta con un clic.
+    </p>
+  </description>
+  <launchable type="desktop-id">net.sifg.lumenmotion.desktop</launchable>
+  <icon type="stock">net.sifg.lumenmotion</icon>
+  <!-- Only url types known to appstream 0.15 (Ubuntu 22.04, where CI validates): no vcs-browser. -->
+  <url type="homepage">https://sifg.net</url>
+  <url type="bugtracker">https://github.com/SifG22/lumen_motion/issues</url>
+  <url type="help">https://github.com/SifG22/lumen_motion</url>
+  <url type="contact">https://sifg.net</url>
+  <categories>
+    <category>Graphics</category>
+    <category>Video</category>
+  </categories>
+  <keywords>
+    <keyword>motion graphics</keyword>
+    <keyword>animation</keyword>
+    <keyword>titles</keyword>
+    <keyword>visual effects</keyword>
+  </keywords>
+  <branding>
+    <color type="primary" scheme_preference="light">#7fe6d8</color>
+    <color type="primary" scheme_preference="dark">#0e9aa8</color>
+  </branding>
+  <requires>
+    <display_length compare="ge">760</display_length>
+  </requires>
+  <supports>
+    <control>keyboard</control>
+    <control>pointing</control>
+    <control>tablet</control>
+  </supports>
+  <provides>
+    <binary>lumen-motion</binary>
+    <mediatype>application/x-lumeneffects</mediatype>
+    <mediatype>application/x-lumeneffects-template</mediatype>
+    <mediatype>application/x-lumeneffects-preset</mediatype>
+  </provides>
+  <content_rating type="oars-1.1"/>
+  <releases>
+    <release version="@VERSION@" date="@DATE@"/>
+  </releases>
+</component>

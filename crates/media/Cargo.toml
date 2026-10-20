@@ -1,0 +1,36 @@
+[package]
+name = "lumen-motion-media"
+description = "Footage import: probing, stills, image sequences, video and audio via FilmCraft's pure-Rust codecs, memory-budgeted frame cache"
+version.workspace = true
+edition.workspace = true
+license.workspace = true
+rust-version.workspace = true
+
+[lints]
+workspace = true
+
+[dependencies]
+craft-docpath = { workspace = true }
+lumen-motion-time = { workspace = true }
+lumen-motion-project = { workspace = true }
+lumen-motion-raster = { workspace = true }
+lumen-motion-render = { workspace = true }
+lumen-motion-psd = { workspace = true }
+lumen-motion-svg = { workspace = true }
+lumen-motion-pdf = { workspace = true }
+lumen-motion-model = { workspace = true }
+filmcraft-codecs = { workspace = true }
+filmcraft-media = { workspace = true }
+filmcraft-isobmff = { workspace = true }
+filmcraft-frame = { workspace = true }
+filmcraft-color = { workspace = true }
+filmcraft-time = { workspace = true }
+# AIFF import (#1428): enables the aiff reader of filmcraft-codecs' symphonia.
+symphonia = { workspace = true }
+exr = { workspace = true }
+gif = { workspace = true }
+image = { workspace = true, features = ["gif", "webp", "tiff", "bmp", "exr", "tga", "hdr"] }
+rayon = { workspace = true }
+serde_json = { workspace = true }
+thiserror = { workspace = true }
+log = { workspace = true }

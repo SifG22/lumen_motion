@@ -1,0 +1,34 @@
+[package]
+name = "lumen-motion-gpu"
+description = "The GPU compositor (wgpu compute): layer transforms, masks/mattes, the 38 blend modes, motion blur, bit-depth quantisation and GPU effects, with the CPU renderer as the reference"
+version.workspace = true
+edition.workspace = true
+license.workspace = true
+rust-version.workspace = true
+
+[lints]
+workspace = true
+
+[dependencies]
+lumen-motion-time = { workspace = true }
+lumen-motion-geom = { workspace = true }
+lumen-motion-color = { workspace = true }
+lumen-motion-project = { workspace = true }
+lumen-motion-raster = { workspace = true }
+lumen-motion-effects = { workspace = true }
+lumen-motion-render = { workspace = true }
+lumen-motion-keyframe = { workspace = true }
+wgpu = { workspace = true }
+bytemuck = { workspace = true }
+log = { workspace = true }
+web-time = { workspace = true }
+
+[target.'cfg(not(target_arch = "wasm32"))'.dependencies]
+pollster = { workspace = true }
+
+[dev-dependencies]
+lumen-motion-text = { workspace = true }
+
+[target.'cfg(target_arch = "wasm32")'.dependencies]
+wasm-bindgen = "=0.2.129"
+js-sys = "0.3"

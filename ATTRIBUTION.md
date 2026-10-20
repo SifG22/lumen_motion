@@ -1,0 +1,106 @@
+# Attribution
+
+Every non-code asset in Lumen Motion, with its author, source and licence. Each file listed here also has
+a `<file>.attribution` sidecar with full details. The rules are in [AGENTS.md](AGENTS.md) §1: no Adobe
+iconography, images or other Adobe assets; open licences only; every asset attributed.
+`cargo xtask assets` checks that this index and the sidecars cover every asset in the repository.
+
+## Asset files
+
+| Asset | Author | Source | Licence |
+|---|---|---|---|
+| `assets/fonts/Inter-Regular.ttf` | The Inter Project Authors | https://github.com/rsms/inter | OFL-1.1 (`assets/fonts/OFL-Inter.txt`) |
+| `assets/fonts/Inter-Medium.ttf` | The Inter Project Authors | https://github.com/rsms/inter | OFL-1.1 (`assets/fonts/OFL-Inter.txt`) |
+| `assets/fonts/Inter-SemiBold.ttf` | The Inter Project Authors | https://github.com/rsms/inter | OFL-1.1 (`assets/fonts/OFL-Inter.txt`) |
+| `assets/fonts/Inter-Bold.ttf` | The Inter Project Authors | https://github.com/rsms/inter | OFL-1.1 (`assets/fonts/OFL-Inter.txt`) |
+| `assets/fonts/Inter-Italic.ttf` | The Inter Project Authors | https://github.com/rsms/inter | OFL-1.1 (`assets/fonts/OFL-Inter.txt`) |
+| `assets/fonts/NotoSerif-Regular.ttf` | The Noto Project Authors | https://github.com/notofonts/latin-greek-cyrillic | OFL-1.1 (`assets/fonts/OFL-NotoSerif.txt`) |
+| `assets/app-icon/lumen-motion.svg` | SifG22 | Original work: Lumen Motion app icon, master vector (white ball with motion streaks and a keyframe diamond on a Lumen Motion teal tile) | MIT OR Apache-2.0 (`assets/app-icon/LICENSE.txt`) |
+| `assets/app-icon/lumen-motion-small.svg` | SifG22 | Original work: Lumen Motion app icon, bolder variant for 32-40 px | MIT OR Apache-2.0 (`assets/app-icon/LICENSE.txt`) |
+| `assets/app-icon/lumen-motion-tiny.svg` | SifG22 | Original work: Lumen Motion app icon, plain variant for 16-24 px | MIT OR Apache-2.0 (`assets/app-icon/LICENSE.txt`) |
+| `assets/app-icon/lumen-motion-document.svg` | SifG22 | Original work: Lumen Motion document icon (.lumeneffects and its template and preset files) | MIT OR Apache-2.0 (`assets/app-icon/LICENSE.txt`) |
+| `assets/app-icon/lumen-motion-1024.png` | SifG22 | Original work: Lumen Motion app icon, 1024 px render | MIT OR Apache-2.0 (`assets/app-icon/LICENSE.txt`) |
+| `assets/app-icon/lumen-motion-macos-512.png` | SifG22 | Original work: Lumen Motion runtime Dock icon (macOS) | MIT OR Apache-2.0 (`assets/app-icon/LICENSE.txt`) |
+| `assets/app-icon/lumen-motion.icns` | SifG22 | Original work: Lumen Motion macOS app icon | MIT OR Apache-2.0 (`assets/app-icon/LICENSE.txt`) |
+| `assets/app-icon/lumen-motion.ico` | SifG22 | Original work: Lumen Motion Windows app icon, 16-256 px | MIT OR Apache-2.0 (`assets/app-icon/LICENSE.txt`) |
+| `assets/app-icon/lumen-motion-document.ico` | SifG22 | Original work: Lumen Motion Windows document icon, 16-256 px | MIT OR Apache-2.0 (`assets/app-icon/LICENSE.txt`) |
+| `assets/app-icon/hicolor/16x16/apps/net.sifg.lumenmotion.png` | SifG22 | Original work: Lumen Motion app icon, Linux hicolor 16x16 | MIT OR Apache-2.0 (`assets/app-icon/LICENSE.txt`) |
+| `assets/app-icon/hicolor/24x24/apps/net.sifg.lumenmotion.png` | SifG22 | Original work: Lumen Motion app icon, Linux hicolor 24x24 | MIT OR Apache-2.0 (`assets/app-icon/LICENSE.txt`) |
+| `assets/app-icon/hicolor/32x32/apps/net.sifg.lumenmotion.png` | SifG22 | Original work: Lumen Motion app icon, Linux hicolor 32x32 | MIT OR Apache-2.0 (`assets/app-icon/LICENSE.txt`) |
+| `assets/app-icon/hicolor/48x48/apps/net.sifg.lumenmotion.png` | SifG22 | Original work: Lumen Motion app icon, Linux hicolor 48x48 | MIT OR Apache-2.0 (`assets/app-icon/LICENSE.txt`) |
+| `assets/app-icon/hicolor/64x64/apps/net.sifg.lumenmotion.png` | SifG22 | Original work: Lumen Motion app icon, Linux hicolor 64x64 | MIT OR Apache-2.0 (`assets/app-icon/LICENSE.txt`) |
+| `assets/app-icon/hicolor/128x128/apps/net.sifg.lumenmotion.png` | SifG22 | Original work: Lumen Motion app icon, Linux hicolor 128x128 | MIT OR Apache-2.0 (`assets/app-icon/LICENSE.txt`) |
+| `assets/app-icon/hicolor/256x256/apps/net.sifg.lumenmotion.png` | SifG22 | Original work: Lumen Motion app icon, Linux hicolor 256x256 | MIT OR Apache-2.0 (`assets/app-icon/LICENSE.txt`) |
+| `assets/app-icon/hicolor/512x512/apps/net.sifg.lumenmotion.png` | SifG22 | Original work: Lumen Motion app icon, Linux hicolor 512x512 | MIT OR Apache-2.0 (`assets/app-icon/LICENSE.txt`) |
+| `assets/app-icon/hicolor/scalable/apps/net.sifg.lumenmotion.svg` | SifG22 | Original work: Lumen Motion app icon, Linux hicolor scalable | MIT OR Apache-2.0 (`assets/app-icon/LICENSE.txt`) |
+| `apps/lumen-motion-web/web/favicon.svg` | SifG22 | Original work: Lumen Motion web app icon (vector favicon) | MIT OR Apache-2.0 (`assets/app-icon/LICENSE.txt`) |
+| `docs/lumen/icon.png` | SifG22 | Original work: Lumen Motion app icon for the README, 240 px | MIT OR Apache-2.0 (`assets/app-icon/LICENSE.txt`) |
+| `assets/fonts/JetBrainsMono-Regular.ttf` | The JetBrains Mono Project Authors | https://github.com/JetBrains/JetBrainsMono | OFL-1.1 (`assets/fonts/OFL-JetBrainsMono.txt`) |
+| `crates/lottie/tests/fixtures/bouncing-ball.json` | upstream contributors (LICENSE-MIT) | Original work: hand-written Lottie test fixture (bouncing ball, eased position keys) | MIT OR Apache-2.0 |
+| `crates/lottie/tests/fixtures/shapes-gradient.json` | upstream contributors (LICENSE-MIT) | Original work: hand-written Lottie test fixture (star, rectangle, gradient fill, dashed stroke, trim paths) | MIT OR Apache-2.0 |
+| `crates/lottie/tests/fixtures/precomp-matte-text.json` | upstream contributors (LICENSE-MIT) | Original work: hand-written Lottie test fixture (precomp, track matte, parented text) | MIT OR Apache-2.0 |
+| `crates/lottie/tests/fixtures/legacy-masks.json` | upstream contributors (LICENSE-MIT) | Original work: hand-written Lottie test fixture (legacy keyframes, masks) | MIT OR Apache-2.0 |
+| `crates/svg/tests/fixtures/basic-shapes.svg` | upstream contributors (LICENSE-MIT) | Original work: hand-written SVG test fixture (basic shapes, groups, transforms) | MIT OR Apache-2.0 |
+| `crates/svg/tests/fixtures/paths-gradients.svg` | upstream contributors (LICENSE-MIT) | Original work: hand-written SVG test fixture (path data, gradients, CSS, use) | MIT OR Apache-2.0 |
+| `crates/model/tests/fixtures/quad.gltf` | upstream contributors (LICENSE-MIT) | Original work: glTF 2.0 test fixture (textured quad, node hierarchy, translation animation; data URIs) | MIT OR Apache-2.0 |
+| `crates/model/tests/fixtures/quad.glb` | upstream contributors (LICENSE-MIT) | Original work: binary glTF test fixture (the same quad with its texture in the BIN chunk) | MIT OR Apache-2.0 |
+| `crates/model/tests/fixtures/cube.obj` | upstream contributors (LICENSE-MIT) | Original work: Wavefront OBJ test fixture (unit cube, two materials) | MIT OR Apache-2.0 |
+| `crates/model/tests/fixtures/cube.mtl` | upstream contributors (LICENSE-MIT) | Original work: MTL test fixture (materials of cube.obj) | MIT OR Apache-2.0 |
+
+## Screenshots
+
+Screenshots of Lumen Motion itself, taken from the app, showing only procedurally generated demo content.
+
+| Asset | Author | Source | Licence |
+|---|---|---|---|
+
+## Code-drawn assets (original work, MIT OR Apache-2.0)
+
+- UI icons drawn in code: `crates/ui-egui/src/icons.rs`, including the original filled favorite star (2026-10-11, upstream contributors (LICENSE-MIT)).
+- Procedural demo content (solids, shapes, gradients, text animations): `crates/engine/src/demo.rs`.
+- Built-in project templates (Lower Third, Title Card, Logo Reveal, Kinetic Type, Social Square, Vertical Story,
+  Slideshow, 3D Text Orbit) built from engine commands, and their thumbnails rendered by our own renderer:
+  `crates/engine/src/templates.rs`.
+- Text animator presets (Typewriter, Fade Up Characters, Bounce In Words, Tracking In, Scramble, Blur In, Jitter,
+  Drop In Lines): `crates/engine/presets/text_animators.json` (sidecar `.attribution`).
+- Transition animation presets (23: wipes, clock and fan reveals, blinds, dissolves, card flips, CC wipes, fades):
+  `crates/engine/presets/transitions.json` (sidecar `.attribution`).
+- Backgrounds animation presets (23: drifting gradients, fog, cloud and smoke, plasma and magma, cells and crystals, scrolling grids
+  and checks, pulse rings, bokeh, light sweep): `crates/engine/presets/backgrounds.json` (sidecar `.attribution`).
+- Sample scripts (File ▸ Scripts) and ScriptUI panel: `crates/engine/scripts/Rename Layers.jsx`,
+  `crates/engine/scripts/Sort Layers by In Point.jsx`, `crates/engine/scripts/Create Null at Selected Layers.jsx`,
+  `crates/engine/scripts/Render Queue Batch.jsx`, `crates/engine/scripts/ScriptUI Panels/Layer Tools.jsx`
+  (sidecars `.attribution`).
+- Bundled extension (ScriptUI panel) with its twelve built-in ease presets:
+  `extensions/scriptui-panels/Ease Presets.jsx` (sidecar `.attribution`).
+- Example effect plug-in: `examples/plugins/posterize-bands` (plug-in API v1, WebAssembly).
+
+## Trained models (optional downloads, not bundled)
+
+The repository and the installers contain no model weights. These models are downloaded only when
+a user asks (Settings ▸ Roto Brush, Settings ▸ Face Tracking, or the `roto.model.*` /
+`face.model.*` commands), unmodified from their authors' official location, checked against a
+pinned SHA-256 and stored in the user's `models` folder with a `<file>.NOTICE.txt` naming their
+authors, licence and source. Lumen Motion runs them with its own Rust implementation and is not
+affiliated with or endorsed by their authors.
+
+| Model | Authors | Source | Licence |
+|---|---|---|---|
+| MobileSAM (`mobile_sam.pt`) | Chaoning Zhang et al., building on Meta AI's Segment Anything and Microsoft's TinyViT | https://github.com/ChaoningZhang/MobileSAM | Apache-2.0 |
+| MediaPipe Face Landmarker (`face_landmarker.task`: BlazeFace short-range detector, Face Mesh V2, blendshapes) | Google LLC | https://developers.google.com/edge/mediapipe/solutions/vision/face_landmarker (model cards: https://storage.googleapis.com/mediapipe-assets/MediaPipe%20BlazeFace%20Model%20Card%20(Short%20Range).pdf, https://storage.googleapis.com/mediapipe-assets/Model%20Card%20MediaPipe%20Face%20Mesh%20V2.pdf) | Apache-2.0 |
+
+## Formats and parameters from other open-source projects
+
+Written in Rust for Lumen Motion; no code is copied. They follow published specifications and
+configuration from these Apache-2.0 projects:
+
+- `crates/segment/src/tflite.rs` reads TensorFlow Lite files using the field layout of TensorFlow
+  Lite's `schema.fbs` (The TensorFlow Authors, https://github.com/tensorflow/tensorflow,
+  Apache-2.0).
+- `crates/segment/src/mediapipe.rs` follows MediaPipe's published face landmarker graph: the SSD
+  anchor layout, detection decoding, crop sizes and the face-mesh point indices it uses (Google
+  LLC, https://github.com/google-ai-edge/mediapipe, Apache-2.0).
+- `crates/segment/src/mobilesam.rs` follows the MobileSAM, TinyViT and Segment Anything
+  architectures and their Apache-2.0 reference code.
+
+- Appearance theme previews, drawn procedurally from original shapes: `crates/ui-egui/src/panels/settings.rs` (original work, MIT OR Apache-2.0).

@@ -1,0 +1,16 @@
+Lumen Motion app icon (lumen-motion.svg, lumen-motion-small.svg, lumen-motion-tiny.svg,
+lumen-motion-document.svg and every file derived from them: lumen-motion-1024.png,
+lumen-motion-macos-512.png, lumen-motion.icns, lumen-motion.ico, lumen-motion-document.ico,
+hicolor/), the web favicon apps/lumen-motion-web/web/favicon.svg, and
+docs/lumen/icon.png.
+
+Copyright (c) 2026 SifG22 (https://sifg.net). Original artwork drawn as SVG for Lumen Motion (no
+third-party material). Licensed under either of
+
+  * Apache License, Version 2.0 (https://www.apache.org/licenses/LICENSE-2.0)
+  * MIT license (https://opensource.org/licenses/MIT)
+
+at your option. The names "Lumen" and "Lumen Motion" are SifG22's and are not covered by this
+licence (see assets/legal/TERMINOS.txt).
+
+Regenerate the derived files with packaging/icons.sh.

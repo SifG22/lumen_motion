@@ -1,0 +1,37 @@
+[package]
+name = "lumen-motion-host"
+description = "Builds a fully wired Lumen Motion session: media decoding (FilmCraft codecs), importer, the expression engine and scripting"
+version.workspace = true
+edition.workspace = true
+license.workspace = true
+rust-version.workspace = true
+
+[lints]
+workspace = true
+
+[dependencies]
+lumen-motion-engine = { workspace = true }
+lumen-motion-project = { workspace = true }
+log = { workspace = true }
+lumen-motion-media = { workspace = true }
+lumen-motion-expr = { workspace = true }
+lumen-motion-script = { workspace = true }
+lumen-motion-export = { workspace = true }
+lumen-motion-plugin = { workspace = true }
+
+# WebAssembly effect plug-ins run in wasmi on native builds.
+[target.'cfg(not(target_arch = "wasm32"))'.dependencies]
+lumen-motion-plugin = { workspace = true, features = ["wasm"] }
+
+[dev-dependencies]
+serde_json = { workspace = true }
+lumen-motion-psd = { workspace = true }
+lumen-motion-svg = { workspace = true }
+lumen-motion-pdf = { workspace = true }
+lumen-motion-raster = { workspace = true }
+lumen-motion-time = { workspace = true }
+lumen-motion-interchange = { workspace = true }
+image = { workspace = true }
+gif = { workspace = true }
+exr = { workspace = true }
+rayon = { workspace = true }

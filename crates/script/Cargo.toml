@@ -1,0 +1,29 @@
+[package]
+name = "lumen-motion-script"
+description = "Lumen Motion scripting: JavaScript (boa) with an After Effects-style object model (app, project, CompItem, Layer, Property…) over the engine's undoable commands"
+version.workspace = true
+edition.workspace = true
+license.workspace = true
+rust-version.workspace = true
+
+[lints]
+workspace = true
+
+[dependencies]
+lumen-motion-engine = { workspace = true }
+lumen-motion-project = { workspace = true }
+lumen-motion-keyframe = { workspace = true }
+lumen-motion-time = { workspace = true }
+lumen-motion-render = { workspace = true }
+lumen-motion-path = { workspace = true }
+serde_json = { workspace = true }
+boa_engine = { workspace = true }
+web-time = { workspace = true }
+
+# On the web, boa's clock and Math.random need the browser (getrandom `wasm_js`, web-time).
+[target.'cfg(target_arch = "wasm32")'.dependencies]
+boa_engine = { workspace = true, features = ["js"] }
+
+[dev-dependencies]
+lumen-motion-expr = { workspace = true }
+lumen-motion-psd = { workspace = true }

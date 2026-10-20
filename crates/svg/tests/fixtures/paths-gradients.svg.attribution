@@ -1,0 +1,7 @@
+asset:        paths-gradients.svg
+title:        SVG test fixture: path data, gradients, CSS styles and use
+author:       upstream contributors (LICENSE-MIT)
+source:       original work
+license:      MIT OR Apache-2.0
+added:        2026-10-02 by upstream contributors (LICENSE-MIT) (Claude agent, SVG import)
+notes:        Hand-written for the lumen-motion-svg parser and Create Shapes from Vector Layer tests.

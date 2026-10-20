@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" role="img" aria-label="Lumen Motion">
+  <defs>
+    <linearGradient id="tile" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#34d9c3"/>
+      <stop offset="1" stop-color="#0e9aa8"/>
+    </linearGradient>
+    <mask id="keyframe" maskUnits="userSpaceOnUse" x="0" y="0" width="512" height="512">
+      <rect width="512" height="512" fill="#fff"/>
+      <polygon points="324,212 368,256 324,300 280,256"/>
+    </mask>
+  </defs>
+  <rect width="512" height="512" rx="112" fill="url(#tile)"/>
+  <g fill="#ffffff">
+    <rect x="120" y="170" width="92" height="34" rx="17"/>
+    <rect x="76" y="239" width="136" height="34" rx="17"/>
+    <rect x="120" y="308" width="92" height="34" rx="17"/>
+    <circle cx="324" cy="256" r="104" mask="url(#keyframe)"/>
+  </g>
+</svg>

@@ -1,0 +1,8 @@
+asset:        lumen-motion-document.svg
+title:        Lumen Motion document icon (.lumeneffects and its template and preset files)
+author:       SifG22
+source:       original work (drawn as SVG for Lumen Motion)
+license:      MIT OR Apache-2.0
+license-file: assets/app-icon/LICENSE.txt
+added:        2026-10-20 by Claude (agent) for SifG22
+notes:        A white page with a folded corner carrying the app tile. Rendered into lumen-motion-document.ico.

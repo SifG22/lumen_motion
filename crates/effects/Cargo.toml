@@ -1,0 +1,24 @@
+[package]
+name = "lumen-motion-effects"
+description = "Effect registry (specs, parameters, categories) and CPU implementations of the effects library"
+version.workspace = true
+edition.workspace = true
+license.workspace = true
+rust-version.workspace = true
+
+[lints]
+workspace = true
+
+[dependencies]
+lumen-motion-geom = { workspace = true }
+lumen-motion-color = { workspace = true }
+lumen-motion-keyframe = { workspace = true }
+lumen-motion-project = { workspace = true }
+lumen-motion-raster = { workspace = true }
+lumen-motion-segment = { workspace = true }
+lumen-motion-track = { workspace = true }
+rayon = { workspace = true }
+serde = { workspace = true }
+serde_json = { workspace = true }
+log = { workspace = true }
+

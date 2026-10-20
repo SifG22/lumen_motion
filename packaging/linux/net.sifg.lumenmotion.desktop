@@ -1,0 +1,17 @@
+[Desktop Entry]
+Type=Application
+Name=Lumen Motion
+GenericName=Motion Graphics Editor
+GenericName[es]=Editor de gráficos en movimiento
+Comment=Motion graphics, animation and visual effects
+Comment[es]=Gráficos en movimiento, animación y efectos visuales
+Exec=lumen-motion %F
+TryExec=lumen-motion
+Icon=net.sifg.lumenmotion
+Terminal=false
+StartupNotify=true
+StartupWMClass=net.sifg.lumenmotion
+Categories=AudioVideo;Video;Graphics;2DGraphics;
+Keywords=motion;graphics;animation;compositor;effects;keyframe;vfx;titles;
+Keywords[es]=animación;gráficos;movimiento;efectos;títulos;plantillas;
+MimeType=application/x-lumeneffects;application/x-lumeneffects-template;application/x-lumeneffects-preset;

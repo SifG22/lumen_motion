@@ -1,0 +1,45 @@
+[package]
+name = "lumen-motion-ui-egui"
+description = "The Lumen Motion egui frontend (swappable): docking panels, composition viewer, timeline, effect controls, control channel"
+version.workspace = true
+edition.workspace = true
+license.workspace = true
+rust-version.workspace = true
+
+[lints]
+workspace = true
+
+[dependencies]
+craft-ui = { workspace = true }
+lumen-motion-time = { workspace = true }
+lumen-motion-geom = { workspace = true }
+lumen-motion-color = { workspace = true }
+lumen-motion-keyframe = { workspace = true }
+lumen-motion-project = { workspace = true }
+lumen-motion-path = { workspace = true }
+lumen-motion-text = { workspace = true }
+lumen-motion-render = { workspace = true }
+lumen-motion-engine = { workspace = true }
+lumen-motion-gpu = { workspace = true }
+egui = { workspace = true }
+eframe = { workspace = true, features = ["default_fonts", "wgpu", "accesskit"] }
+serde = { workspace = true }
+serde_json = { workspace = true }
+log = { workspace = true }
+rayon = { workspace = true }
+web-time = { workspace = true }
+kurbo = { workspace = true }
+image = { workspace = true }
+
+[target.'cfg(not(target_arch = "wasm32"))'.dependencies]
+sys-locale = { workspace = true }
+
+[dev-dependencies]
+egui_kittest = { workspace = true, features = ["eframe", "wgpu"] }
+pollster = "0.4"
+lumen-motion-host = { workspace = true }
+exr = { workspace = true }
+
+[build-dependencies]
+serde_json = { workspace = true }
+toml = "1"

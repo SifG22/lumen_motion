@@ -1,0 +1,19 @@
+[package]
+name = "lumen-motion-project"
+description = "The Lumen Motion document: project items, compositions, layers and the After-Effects-style property tree"
+version.workspace = true
+edition.workspace = true
+license.workspace = true
+rust-version.workspace = true
+
+[lints]
+workspace = true
+
+[dependencies]
+lumen-motion-time = { workspace = true }
+lumen-motion-geom = { workspace = true }
+lumen-motion-color = { workspace = true }
+lumen-motion-keyframe = { workspace = true }
+serde = { workspace = true }
+serde_json = { workspace = true }
+thiserror = { workspace = true }

@@ -1,0 +1,12 @@
+Lumen Motion portable mode
+
+While this file sits next to lumen-motion.exe, Lumen Motion keeps its settings, keyboard shortcuts,
+crash-recovery files, logs and plug-ins in the LumenMotionData folder beside it instead of
+%APPDATA%\Lumen Motion. Copy the whole folder to move Lumen Motion with its settings.
+
+The disk cache, media cache and conformed audio still go to %LOCALAPPDATA%\Lumen Motion unless
+you choose other folders in Edit > Preferences > Disk.
+
+Delete this file to use the normal per-user settings folder (%APPDATA%\Lumen Motion) instead.
+If LumenMotionData can't be written (for example on a read-only drive), Lumen Motion logs a
+warning and uses %APPDATA%\Lumen Motion instead.
