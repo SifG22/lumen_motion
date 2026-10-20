@@ -362,12 +362,12 @@ fn download(s: &mut Session, p: &Value, task: Task) -> Result<Value> {
     spawn(s.models.lane(task), k.label, format!("Downloading {} ({size})…", m.name), wait, move |_| {
         std::fs::create_dir_all(&dir).map_err(|e| format!("cannot create {}: {e}", dir.display()))?;
         let tmp = dir.join(format!("{}.part", m.file_name));
-        let out = std::process::Command::new("curl")
-            .args(["-fsSL", "--retry", "2", "--connect-timeout", "20", "-o"])
-            .arg(&tmp)
-            .arg(m.url)
-            .output()
-            .map_err(|e| format!("downloading needs curl ({e}); or download {} in a browser and use Install from File", m.url))?;
+        let mut curl = std::process::Command::new("curl");
+        curl.args(["-fsSL", "--retry", "2", "--connect-timeout", "20", "-o"]).arg(&tmp).arg(m.url);
+        // A console program started from the windowed app would flash a console window.
+        #[cfg(target_os = "windows")]
+        std::os::windows::process::CommandExt::creation_flags(&mut curl, 0x0800_0000); // CREATE_NO_WINDOW
+        let out = curl.output().map_err(|e| format!("downloading needs curl ({e}); or download {} in a browser and use Install from File", m.url))?;
         if !out.status.success() {
             let _ = std::fs::remove_file(&tmp);
             return Err(format!("download failed: {}", String::from_utf8_lossy(&out.stderr).trim()));

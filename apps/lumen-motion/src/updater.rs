@@ -200,6 +200,16 @@ fn sanitize(v: &str) -> String {
     v.chars().filter(|c| c.is_ascii_alphanumeric() || *c == '.' || *c == '-').take(32).collect()
 }
 
+/// `exe` from System32, started without a console window (a console program started from the
+/// windowed app would otherwise flash one).
+fn system_tool(exe: &str) -> Command {
+    #[allow(unused_mut)]
+    let mut c = Command::new(system32(exe));
+    #[cfg(windows)]
+    std::os::windows::process::CommandExt::creation_flags(&mut c, 0x0800_0000); // CREATE_NO_WINDOW
+    c
+}
+
 fn system32(exe: &str) -> PathBuf {
     let root = std::env::var_os("SystemRoot").map_or_else(|| PathBuf::from(r"C:\Windows"), PathBuf::from);
     root.join("System32").join(exe)
@@ -208,7 +218,7 @@ fn system32(exe: &str) -> PathBuf {
 /// Run Windows' curl (`-fsSL`, so HTTP errors fail) and return what it printed.
 fn curl(args: &[&str]) -> Result<Vec<u8>, String> {
     let agent = format!("LumenMotion/{VERSION}");
-    let out = Command::new(system32("curl.exe")).args(["-fsSL", "-A", agent.as_str()]).args(args).output().map_err(|e| format!("curl: {e}"))?;
+    let out = system_tool("curl.exe").args(["-fsSL", "-A", agent.as_str()]).args(args).output().map_err(|e| format!("curl: {e}"))?;
     if !out.status.success() {
         return Err(format!("curl failed ({}): {}", out.status, String::from_utf8_lossy(&out.stderr).trim()));
     }
@@ -217,7 +227,7 @@ fn curl(args: &[&str]) -> Result<Vec<u8>, String> {
 
 /// SHA-256 of `file` (lower-case hex) through `certutil -hashfile`.
 fn sha256(file: &Path) -> Result<String, String> {
-    let out = Command::new(system32("certutil.exe")).arg("-hashfile").arg(file).arg("SHA256").output().map_err(|e| format!("certutil: {e}"))?;
+    let out = system_tool("certutil.exe").arg("-hashfile").arg(file).arg("SHA256").output().map_err(|e| format!("certutil: {e}"))?;
     if !out.status.success() {
         return Err(format!("certutil failed ({})", out.status));
     }

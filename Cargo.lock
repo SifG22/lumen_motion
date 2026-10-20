@@ -2635,7 +2635,7 @@ checksum = "f9f8bd3e56ce4dfc153cf470fffbfa98c7620958b312ca5c3a4b8d5181fd13c6"
 
 [[package]]
 name = "lumen-motion"
-version = "0.0.1"
+version = "0.0.2"
 dependencies = [
  "cpal",
  "eframe",
@@ -2660,7 +2660,7 @@ dependencies = [
 
 [[package]]
 name = "lumen-motion-automation"
-version = "0.0.1"
+version = "0.0.2"
 dependencies = [
  "image",
  "lumen-motion-engine",
@@ -2672,14 +2672,14 @@ dependencies = [
 
 [[package]]
 name = "lumen-motion-av1enc"
-version = "0.0.1"
+version = "0.0.2"
 dependencies = [
  "filmcraft-av1",
 ]
 
 [[package]]
 name = "lumen-motion-cli"
-version = "0.0.1"
+version = "0.0.2"
 dependencies = [
  "cpu-time",
  "image",
@@ -2695,7 +2695,7 @@ dependencies = [
 
 [[package]]
 name = "lumen-motion-color"
-version = "0.0.1"
+version = "0.0.2"
 dependencies = [
  "proptest",
  "serde",
@@ -2703,7 +2703,7 @@ dependencies = [
 
 [[package]]
 name = "lumen-motion-effects"
-version = "0.0.1"
+version = "0.0.2"
 dependencies = [
  "log",
  "lumen-motion-color",
@@ -2720,7 +2720,7 @@ dependencies = [
 
 [[package]]
 name = "lumen-motion-engine"
-version = "0.0.1"
+version = "0.0.2"
 dependencies = [
  "craft-docpath",
  "exr",
@@ -2754,7 +2754,7 @@ dependencies = [
 
 [[package]]
 name = "lumen-motion-export"
-version = "0.0.1"
+version = "0.0.2"
 dependencies = [
  "filmcraft-aac",
  "filmcraft-h264enc",
@@ -2784,7 +2784,7 @@ dependencies = [
 
 [[package]]
 name = "lumen-motion-expr"
-version = "0.0.1"
+version = "0.0.2"
 dependencies = [
  "boa_engine",
  "lumen-motion-color",
@@ -2801,7 +2801,7 @@ dependencies = [
 
 [[package]]
 name = "lumen-motion-geom"
-version = "0.0.1"
+version = "0.0.2"
 dependencies = [
  "proptest",
  "serde",
@@ -2809,7 +2809,7 @@ dependencies = [
 
 [[package]]
 name = "lumen-motion-gpu"
-version = "0.0.1"
+version = "0.0.2"
 dependencies = [
  "bytemuck",
  "js-sys",
@@ -2831,14 +2831,14 @@ dependencies = [
 
 [[package]]
 name = "lumen-motion-hevcenc"
-version = "0.0.1"
+version = "0.0.2"
 dependencies = [
  "filmcraft-hevc",
 ]
 
 [[package]]
 name = "lumen-motion-host"
-version = "0.0.1"
+version = "0.0.2"
 dependencies = [
  "exr",
  "gif",
@@ -2863,7 +2863,7 @@ dependencies = [
 
 [[package]]
 name = "lumen-motion-interchange"
-version = "0.0.1"
+version = "0.0.2"
 dependencies = [
  "filmcraft-color",
  "filmcraft-geom",
@@ -2882,7 +2882,7 @@ dependencies = [
 
 [[package]]
 name = "lumen-motion-keyframe"
-version = "0.0.1"
+version = "0.0.2"
 dependencies = [
  "lumen-motion-color",
  "lumen-motion-geom",
@@ -2894,7 +2894,7 @@ dependencies = [
 
 [[package]]
 name = "lumen-motion-lottie"
-version = "0.0.1"
+version = "0.0.2"
 dependencies = [
  "craft-docpath",
  "kurbo",
@@ -2912,7 +2912,7 @@ dependencies = [
 
 [[package]]
 name = "lumen-motion-media"
-version = "0.0.1"
+version = "0.0.2"
 dependencies = [
  "craft-docpath",
  "exr",
@@ -2941,7 +2941,7 @@ dependencies = [
 
 [[package]]
 name = "lumen-motion-model"
-version = "0.0.1"
+version = "0.0.2"
 dependencies = [
  "image",
  "lumen-motion-geom",
@@ -2953,14 +2953,14 @@ dependencies = [
 
 [[package]]
 name = "lumen-motion-opusenc"
-version = "0.0.1"
+version = "0.0.2"
 dependencies = [
  "filmcraft-opus",
 ]
 
 [[package]]
 name = "lumen-motion-path"
-version = "0.0.1"
+version = "0.0.2"
 dependencies = [
  "kurbo",
  "linesweeper",
@@ -2972,7 +2972,7 @@ dependencies = [
 
 [[package]]
 name = "lumen-motion-pdf"
-version = "0.0.1"
+version = "0.0.2"
 dependencies = [
  "craft-pdf",
  "image",
@@ -2988,7 +2988,7 @@ dependencies = [
 
 [[package]]
 name = "lumen-motion-plugin"
-version = "0.0.1"
+version = "0.0.2"
 dependencies = [
  "lumen-motion-effects",
  "lumen-motion-keyframe",
@@ -3000,7 +3000,7 @@ dependencies = [
 
 [[package]]
 name = "lumen-motion-project"
-version = "0.0.1"
+version = "0.0.2"
 dependencies = [
  "lumen-motion-color",
  "lumen-motion-geom",
@@ -3013,14 +3013,14 @@ dependencies = [
 
 [[package]]
 name = "lumen-motion-psd"
-version = "0.0.1"
+version = "0.0.2"
 dependencies = [
  "miniz_oxide 0.8.9",
 ]
 
 [[package]]
 name = "lumen-motion-raster"
-version = "0.0.1"
+version = "0.0.2"
 dependencies = [
  "lumen-motion-color",
  "lumen-motion-geom",
@@ -3029,7 +3029,7 @@ dependencies = [
 
 [[package]]
 name = "lumen-motion-render"
-version = "0.0.1"
+version = "0.0.2"
 dependencies = [
  "kurbo",
  "log",
@@ -3051,7 +3051,7 @@ dependencies = [
 
 [[package]]
 name = "lumen-motion-script"
-version = "0.0.1"
+version = "0.0.2"
 dependencies = [
  "boa_engine",
  "lumen-motion-engine",
@@ -3068,7 +3068,7 @@ dependencies = [
 
 [[package]]
 name = "lumen-motion-segment"
-version = "0.0.1"
+version = "0.0.2"
 dependencies = [
  "miniz_oxide 0.8.9",
  "ndarray",
@@ -3077,7 +3077,7 @@ dependencies = [
 
 [[package]]
 name = "lumen-motion-svg"
-version = "0.0.1"
+version = "0.0.2"
 dependencies = [
  "kurbo",
  "lumen-motion-geom",
@@ -3089,7 +3089,7 @@ dependencies = [
 
 [[package]]
 name = "lumen-motion-text"
-version = "0.0.1"
+version = "0.0.2"
 dependencies = [
  "harfrust",
  "kurbo",
@@ -3101,7 +3101,7 @@ dependencies = [
 
 [[package]]
 name = "lumen-motion-time"
-version = "0.0.1"
+version = "0.0.2"
 dependencies = [
  "proptest",
  "serde",
@@ -3109,7 +3109,7 @@ dependencies = [
 
 [[package]]
 name = "lumen-motion-track"
-version = "0.0.1"
+version = "0.0.2"
 dependencies = [
  "lumen-motion-raster",
  "lumen-motion-segment",
@@ -3121,7 +3121,7 @@ dependencies = [
 
 [[package]]
 name = "lumen-motion-ui-egui"
-version = "0.0.1"
+version = "0.0.2"
 dependencies = [
  "craft-ui",
  "eframe",
@@ -3153,11 +3153,11 @@ dependencies = [
 
 [[package]]
 name = "lumen-motion-vp9enc"
-version = "0.0.1"
+version = "0.0.2"
 
 [[package]]
 name = "lumen-motion-web"
-version = "0.0.1"
+version = "0.0.2"
 dependencies = [
  "eframe",
  "egui",
@@ -6625,7 +6625,7 @@ checksum = "e450f9b2ed1dff33c94c12589a87338689467b9c4f5d8a5710bd09a847d2c8a7"
 
 [[package]]
 name = "xtask"
-version = "0.0.1"
+version = "0.0.2"
 dependencies = [
  "serde_json",
 ]

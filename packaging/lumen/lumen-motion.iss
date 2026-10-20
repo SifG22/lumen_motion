@@ -1,7 +1,7 @@
 ; Instalador de Lumen Motion para Windows (Inno Setup 6). Lo genera
 ; packaging\lumen\empaquetar.ps1 -Instalador, que pasa la version, la arquitectura y la carpeta ya
 ; preparada:
-;   ISCC.exe /DVersion=0.0.1 /DArch=x64 /DSource=..\..\dist\LumenMotion-0.0.1-windows-x64 /DOutDir=..\..\dist lumen-motion.iss
+;   ISCC.exe /DVersion=0.0.2 /DArch=x64 /DSource=..\..\dist\LumenMotion-0.0.2-windows-x64 /DOutDir=..\..\dist lumen-motion.iss
 ;
 ; Se instala para el usuario actual (sin pedir administrador) en %LOCALAPPDATA%\Programs\Lumen Motion.
 ; Crea el acceso en el menu Inicio (y en el escritorio si se marca), asocia los proyectos
@@ -10,7 +10,7 @@
 ; desinstala desde Configuracion > Aplicaciones, quitando las asociaciones.
 
 #ifndef Version
-  #define Version "0.0.1"
+  #define Version "0.0.2"
 #endif
 #ifndef Arch
   #define Arch "x64"

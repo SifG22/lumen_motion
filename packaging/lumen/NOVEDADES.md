@@ -3,6 +3,11 @@
 Cada versión tiene su sección `## x.y.z`. El workflow de publicación copia esa sección (hasta 600
 caracteres) en `latest.json`, y la app la muestra al avisar de la actualización.
 
+## 0.0.2
+
+- Abre más rápido: los efectos de la GPU se preparan la primera vez que se usan, no al arrancar.
+- Ya no aparece una ventana de terminal con la app abierta (al buscar actualizaciones o descargar modelos).
+
 ## 0.0.1
 
 Primera versión de Lumen Motion, por SifG22. Nuevo menú Lumen:
