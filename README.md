@@ -193,6 +193,7 @@ powershell -ExecutionPolicy Bypass -File packaging\lumen\empaquetar.ps1 -Arch ar
 
 - El uso de Lumen Motion se rige por los **[términos y condiciones de SifG22](assets/legal/TERMINOS.txt)**, que también se muestran al instalar y en Ayuda › Acerca de › Términos.
 - Los nombres **Lumen** y **Lumen Motion** y su marca son de SifG22. El icono es obra de SifG22 ([`assets/app-icon/LICENSE.txt`](assets/app-icon/LICENSE.txt)).
+- Lumen Motion está basado en **[EffectCraft](https://github.com/storytold/effectcraft)**, de **ArtCraft** y sus colaboradores, un compositor de gráficos en movimiento de código abierto escrito en Rust. Gracias a su equipo por publicarlo con licencia libre.
 - Lumen Motion es software de código abierto con **licencia MIT** ([LICENSE-MIT](LICENSE-MIT), [NOTICE](NOTICE)) o Apache-2.0; los avisos de copyright que exige la licencia están en esos archivos.
 - Las fuentes (Inter, Noto Serif, JetBrains Mono, SIL OFL 1.1) y demás componentes de terceros, con sus licencias, están en [ATTRIBUTION.md](ATTRIBUTION.md).
 - Lumen Motion no contiene código, iconos, presets ni LUT de Adobe, ni código GPL o LGPL. No está afiliado ni respaldado por Adobe.
