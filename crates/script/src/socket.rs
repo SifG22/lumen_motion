@@ -320,6 +320,20 @@ mod tests {
         "x".repeat(64 * 1024 * 1024)
     }
 
+    /// Write to `id` until a write times out (`timeout` 1 s), and return that write's result:
+    /// Windows' loopback takes a whole [`big`] write before the buffers fill, so one is not enough.
+    fn fill(id: u32) -> J {
+        let data = big();
+        let mut r = J::Null;
+        for _ in 0..16 {
+            r = run("write", id, &json!({"data": data, "timeout": 1}));
+            if r.get("error").is_some() {
+                break;
+            }
+        }
+        r
+    }
+
     /// Run `f` on a thread; its result, or `None` if it takes longer than `limit`.
     fn within<T: Send + 'static>(limit: Duration, f: impl FnOnce() -> T + Send + 'static) -> Option<T> {
         let (tx, rx) = mpsc::channel();
@@ -334,11 +348,10 @@ mod tests {
         // #1248: it used to block for good.
         let (host, _keep) = stalled_peer();
         let id = open(&host);
-        let data = big();
         let t0 = Instant::now();
-        let r = within(Duration::from_secs(20), move || run("write", id, &json!({"data": data, "timeout": 1}))).expect("the write gave up");
+        let r = within(Duration::from_secs(60), move || fill(id)).expect("the write gave up");
         assert!(r["error"].as_str().is_some_and(|e| e.contains("timed out")), "{r}");
-        assert!(t0.elapsed() < Duration::from_secs(15), "{:?}", t0.elapsed());
+        assert!(t0.elapsed() < Duration::from_secs(45), "{:?}", t0.elapsed());
         run("close", id, &J::Null);
     }
 
@@ -347,11 +360,15 @@ mod tests {
         let (host_a, _keep_a) = stalled_peer();
         let (host_b, _keep_b) = stalled_peer();
         let (a, b) = (open(&host_a), open(&host_b));
-        // A write on A that would wait a minute.
+        // A write on A that would wait a minute, once A's buffers are full. Windows doesn't let a
+        // close interrupt a send already blocked, so there the write ends at its own (shorter) timeout.
+        let wait = if cfg!(windows) { 4 } else { 60 };
+        let full = fill(a);
+        assert!(full.get("error").is_some(), "{full}");
         let data = big();
         let (tx, blocked) = mpsc::channel();
         std::thread::spawn(move || {
-            let _ = tx.send(run("write", a, &json!({"data": data, "timeout": 60})));
+            let _ = tx.send(run("write", a, &json!({"data": data, "timeout": wait})));
         });
         std::thread::sleep(Duration::from_millis(500));
         // Socket B answers meanwhile (the table isn't locked by A's write).
@@ -359,7 +376,7 @@ mod tests {
         assert_eq!(r["value"], true, "{r}");
         // Closing A returns at once and ends A's write.
         within(Duration::from_secs(3), move || run("close", a, &J::Null)).expect("close returned while A was blocked");
-        let r = blocked.recv_timeout(Duration::from_secs(5)).expect("A's write ended when A was closed");
+        let r = blocked.recv_timeout(Duration::from_secs(10)).expect("A's write ended when A was closed");
         assert!(r.get("error").is_some(), "{r}");
         run("close", b, &J::Null);
     }

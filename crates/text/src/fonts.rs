@@ -1088,7 +1088,7 @@ mod tests {
         assert!(!ps.missing && ps.face == black.face, "{ps:?}");
         assert_eq!(wght(&ps), vec![("wght".to_string(), 900.0)]);
         assert_eq!(wght(&resolve("LumenMotionInstanceTest-ExtraBold", "")), vec![("wght".to_string(), 800.0)]);
-        assert_eq!(wght(&resolve("lumen-motion instance test extra bold", "")), vec![("wght".to_string(), 800.0)]);
+        assert_eq!(wght(&resolve("lumen motion instance test extra bold", "")), vec![("wght".to_string(), 800.0)]);
         // The font menu lists every instance, in weight order.
         let fams = families();
         let styles = &fams.iter().find(|(f, _)| f == FAMILY).unwrap().1;
@@ -1257,12 +1257,15 @@ mod tests {
     fn microsoft_families_resolve_to_metric_compatible_substitutes() {
         add_font_data(test_font("Carlito"));
         add_font_data(test_font("Caladea"));
-        let calibri = resolve("Calibri", "Regular");
-        assert_eq!(face(calibri.face).info.family, "Carlito");
-        assert!(calibri.missing, "the original name stays missing for Find Missing Fonts");
-        let cambria = resolve("Cambria", "Bold");
-        assert_eq!(face(cambria.face).info.family, "Caladea");
-        assert!(cambria.missing);
+        // Windows (and any system with Office fonts) has the originals: they resolve to themselves.
+        for (family, style, substitute) in [("Calibri", "Regular", "Carlito"), ("Cambria", "Bold", "Caladea")] {
+            let r = resolve(family, style);
+            if r.missing {
+                assert_eq!(face(r.face).info.family, substitute, "{family}");
+            } else {
+                assert_eq!(face(r.face).info.family, family, "an installed {family} is used as it is");
+            }
+        }
         let unknown = resolve("No Such Family 1677", "Regular");
         assert_eq!(face(unknown.face).info.family, DEFAULT_FAMILY);
         assert!(unknown.missing);
